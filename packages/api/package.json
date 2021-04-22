@@ -1,0 +1,32 @@
+{
+  "name": "@showcase/api",
+  "description": "GraphQL engine",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node lib/index.js",
+    "build": "babel --root-mode upward src -d lib",
+    "develop": "npm-run-all build --parallel develop:*",
+    "develop:build": "yarn build --watch",
+    "develop:start": "cross-env NODE_ENV=development nodemon lib/index.js"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "apollo-server": "^2.23.0",
+    "graphql": "^15.5.0",
+    "subscriptions-transport-ws": "^0.9.18",
+    "casual": "^1.6.2"
+  },
+  "keywords": [
+    "vince",
+    "live",
+    "vxl",
+    "api",
+    "restful",
+    "graphql",
+    "apollo",
+    "server",
+    "node",
+    "relay"
+  ]
+}

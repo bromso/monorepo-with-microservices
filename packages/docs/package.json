@@ -1,0 +1,14 @@
+{
+  "name": "@showcase/docs",
+  "description": "Documentation of all the components thru the power of Storybook",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "develop": "yarn nuxt-storybook -p 3003",
+    "build": "build-storybook"
+  },
+  "devDependencies": {
+    "@nuxtjs/storybook": "^4.0.2"
+  },
+  "dependencies": {}
+}
